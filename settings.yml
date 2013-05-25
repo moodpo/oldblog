@@ -5,9 +5,10 @@
 #: all variables can be accessed in template with ``site`` namespace.
 #: for instance: {{site.name}}
 site:
-    name: moodpo  # your site name
+    name: Moodpo Blog  # your site name
     url: "http://moodpo.com"  # your site url
     # "prefix": "blog",
+    discriptions: "记录生活点滴，感悟程序人生"
 
 #: this config defined information of your site
 #: 1. where the resources  2. how should the site be generated
