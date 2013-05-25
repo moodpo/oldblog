@@ -1,4 +1,4 @@
-# 部署在moodpo.com的静态文件
+# Blog
 
 - date: 2013-05-24
 - tags: moodpo
