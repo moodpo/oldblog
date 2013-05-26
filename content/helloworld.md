@@ -1,7 +1,7 @@
 # Hello World
 
 - date:2013-05-24
-- tages:python, hello
+- tags: python, blog, web
 
 Here is the description.
 
