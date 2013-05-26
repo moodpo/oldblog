@@ -19,13 +19,13 @@ config:
     static_prefix: /static/
     permalink: "{{date.year}}/{{filename}}.html"
     relative_url: false
-    perpage: 30
-    feedcount: 20
+    perpage: 10
+    feedcount: 10
     timezone: "+08:00"
 
 
 author:
-    default: xiaoxie
+    default: yangxiaoxie
     vars:
         # key: value
 
@@ -51,7 +51,7 @@ writer:
         - liquidluck.writers.core.YearWriter
         - liquidluck.writers.core.CategoryWriter
         #- liquidluck.writers.core.CategoryFeedWriter
-        #- liquidluck.writers.core.TagWriter
+        - liquidluck.writers.core.TagWriter
         #- liquidluck.writers.core.TagCloudWriter
     vars:
         # uncomment if you want to reset archive page
