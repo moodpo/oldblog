@@ -1,7 +1,7 @@
 # 基于静态文件的新博客
 
 - date: 2013-05-27
-- tags: blog
+- tags: blog, python, liquidluck
 - category: Life
 
 ------
