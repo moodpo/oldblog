@@ -40,7 +40,9 @@ $ pip -U install liquidluck
 
 部署的过程相对简单，但还是有一些细节 [Liquidluck 文档][4]中没有写：
 
-### 1. 使用 webhook 的话一般直接把整个部署目录都放在 hook范围之内，因此先使用 git 把目录下载下来，当然在此之前你应该在 GitHub 上先建立一个 repo，repo的大致内容如下：
+### 1. 在 GitHub 上建立博客的 repo
+
+使用 webhook 的话一般直接把整个部署目录都放在 hook 范围之内，因此先使用 git 把目录下载下来，当然在此之前你应该在 GitHub 上先建立一个 repo，repo的大致内容如下：
 
 ````
 blog
