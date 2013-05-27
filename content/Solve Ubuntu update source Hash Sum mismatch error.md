@@ -25,4 +25,4 @@ E: Some index files failed to download. They have been ignored, or old ones used
 sudo apt-get -o Acquire::http::proxy="http://127.0.0.1:8087/" update
 ````
 
-<a><img src="/media/uploads/2013/04/3587804018.png" alt="Hash Sum mismatch Error.png" /></a>
+<a><img src="/media/2013/04/3587804018.png" alt="Hash Sum mismatch Error.png" /></a>
