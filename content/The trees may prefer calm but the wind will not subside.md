@@ -2,7 +2,7 @@
 
 - date: 2013-03-30
 - category: Life
-- tags: 工作,选择
+- tags: select, work
 
 ----
 

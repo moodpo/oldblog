@@ -2,7 +2,7 @@
 
 - date: 2013-04-08
 - category: Life
-- tags: 人生, 毕业
+- tags: graduation
 
 ----
 
