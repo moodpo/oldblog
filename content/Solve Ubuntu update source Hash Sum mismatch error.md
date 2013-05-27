@@ -2,7 +2,7 @@
 
 - date: 2013-04-13
 - category: Work
-- tags: ubuntu, 更新源
+- tags: ubuntu, source
 
 ----
 

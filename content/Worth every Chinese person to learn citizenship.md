@@ -2,7 +2,7 @@
 
 - date: 2013-05-05
 - category: Life
-- tags: 公民意识, 美国
+- tags: citizenship
 
 ----
 
