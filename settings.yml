@@ -19,7 +19,7 @@ config:
     static_prefix: /static/
     permalink: "{{date.year}}/{{filename}}.html"
     relative_url: false
-    perpage: 10
+    perpage: 13
     feedcount: 10
     timezone: "+08:00"
 
