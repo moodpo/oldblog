@@ -91,6 +91,8 @@ $ nohup liquidluck server -p 80 > access.log 2>&1 &             #后台运行
 
 关于 Liquidluck 的安装与部署的细节就是这些，更详细的内容请看[官方文档][4]。
 
+Update: Liquidluck 文件名、标签和分类不支持中文！
+
 [1]: https://github.com/lepture/liquidluck
 [2]: https://github.com
 [3]: https://github.com/moodpo/liquidluck-theme-moodpo
