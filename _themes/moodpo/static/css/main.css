@@ -156,14 +156,18 @@ nav.pagination{
 	text-align: center;
 }
 
-nav.pagination a.prev{
+nav.pagination .prev{
 	float: left;
 }
 
-nav.pagination a.next{
+nav.pagination .next{
 	float: right;
 }
 
+nav.pagination span.prev,
+nav.pagination span.next{
+	color: #9f9f99;
+}
 
 /*---------- tags css ----------*/
 .tagcloud{
