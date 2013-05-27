@@ -2,7 +2,7 @@
 
 - date: 2013-02-25
 - category: Life
-- tage: twitter, weibo
+- tags: twitter, weibo
 
 ----
 

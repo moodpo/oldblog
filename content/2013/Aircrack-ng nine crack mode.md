@@ -2,7 +2,7 @@
 
 - date: 2013-02-04
 - category: Work
-- tage: twitter, weibo
+- tags: twitter, weibo
 
 ----
 
