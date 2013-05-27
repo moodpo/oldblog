@@ -5,7 +5,9 @@
 {% block nav %}
 <div class="grid grid-10 last nav">
     {% for item in theme.navigation %}
-        <a href="{{item.link}}" {% if item.name == "Archive" %} class="current" {% endif %}>{{item.name}}</a>
+        <a href="{{item.link}}" {% if item.name == "Archive" %} class="current" {% endif %}>
+            {% if item.name == "Archive" -%} Home {%- else -%} {{item.name}} {%- endif %}
+        </a>
     {% endfor %}
 </div>
 {% endblock %}
