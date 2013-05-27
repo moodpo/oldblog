@@ -16,7 +16,7 @@
     <nav class="tagcloud">
         {% for tag in tags -%}
         {%- set items = tags[tag] -%}
-        <a id="{{tag}}" href="{{tag}}/">{{tag}}<span class="count">({{items|length}})</span></a>
+        <a id="{{tag}}" href="{{tag|lower(tag)}}/">{{tag}}<span class="count">({{items|length}})</span></a>
         {%- endfor %}
     </nav>
 </div>
