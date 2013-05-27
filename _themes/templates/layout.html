@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="{{theme.lang}}">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="{{static_url('favicon.ico')}}">
+<title>{% block title %}{{site.name}}{% endblock %}</title>
+<link rel="stylesheet" href="{{static_url('css/normalize.css')}}" />
+<link rel="stylesheet" href="{{static_url('css/grid.css')}}" />
+<link rel="stylesheet" href="{{static_url('css/main.css')}}" />
+<script type="text/javascript" src="{{static_url('script/modernizr.js')}}"></script>
+</head>
+<body>
+	<div class="container">
+		<!-- #header =======================================================-->
+		<header id="header" class="grid grid-20">
+			<div class="grid grid-6 first">
+				{% block header %}
+	            <h1 id="logo"><a href="{{site.url}}">{{site.name}}</a></h1>
+	            <p id="tagline">{{site.discriptions}}</p>
+	            {% endblock %}
+        	</div>
+	        <div class="grid grid-4">&nbsp;</div>
+	        {% block nav %}
+	        
+	        {% endblock %}
+		</header>
+		<!-- /#header -->
+
+		<!-- #main =======================================================-->
+		<div id="main" class="grid grid-20">
+			{% block main %}
+            {% endblock %}
+		</div>
+
+		<!-- #footer =======================================================-->
+		<footer id="footer" class="grid grid-20">
+			{% block footer %}
+			<div class="grid grid-5 first"><small>Copyright &copy; 2013 - {{site.name}}</small></div>
+			<div class="grid grid-15 last" align="right"><small>Power by <a href="https://github.com/lepture/liquidluck">Liquidluck</a> , Theme <a href="{{theme.website}}">{{theme.name}}</a> by <a href="{{theme.author.website}}">@{{theme.author.name}}</a></small></div>
+			<div class="link-back2top"><a href="javascript:void(0)">Back to top</a></div>
+			{% endblock %}
+		</footer>
+		<!-- /#footer -->
+	</div>
+<!-- javascript
+	================================================================ -->
+<script type="text/javascript" src="{{static_url('script/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{static_url('script/prettify.js')}}"></script>
+<script type="text/javascript" src="{{static_url('script/main.js')}}"></script>
+</body>
+</html>

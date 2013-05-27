@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}{{post.title}} - {{site.name}}{% endblock %}
+
+{% block nav %}
+<div class="grid grid-10 last nav">
+    {% for item in theme.navigation %}
+        <a href="{{item.link}}" {% if item.name == "Archive" %} class="current" {% endif %}>{{item.name}}</a>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block main %}
+<article class="post">
+	<h1>{{post.title}}</h1>
+	<p class="post-meta">{{ post.date.strftime('%b %d, %Y') }} by {{post.author.name}}</p>
+	<div class="content">
+		{{post.content}}
+	</div>
+
+	{% if post.tags %}
+	<div class="post-tags">
+        <span class="tags-sign">Tags : </span>
+        {% for tag in post.tags %}
+        <a href="{{ tag|tag_url }}">{{tag}}</a>
+        {% endfor %}
+    </div>
+    {% endif %}
+</article>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block title %}{{pagination.title|title}} - {{site.name}}{% endblock %}
+
+{% block nav %}
+<div class="grid grid-10 last nav">
+    {% for item in theme.navigation %}
+        <a href="{{item.link}}" {% if item.name == (pagination.title|title) %} class="current" {% endif %}>{{item.name}}</a>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block main %}
+<div class="grid grid-10 first">
+    <h1 align="center">文章列表</h1>
+    <ul class="entry-list">
+    {% set year = 0 %}
+    {% for item in pagination.items %}
+        {% if item.date.year != year %}
+        	{% set year = item.date.year %}
+        	<li><h3 align="center"><a href="{{item|year_url}}">{{item.date.year}}年</a></h3></li>
+        {% endif %}
+    	    <li class="entry-item">&gt; 
+    	    	<a href="{{item|permalink}}">{{item.title}}</a>
+    	        <time class="updated" datetime="{{item.date|xmldatetime}}">{{item.date.strftime('%b %d')}}</time>
+    	    </li>
+    {% endfor %}
+    </ul>
+
+
+{% if pagination.has_prev or pagination.has_next %}
+<nav class="pagination">
+    {% if pagination.has_prev %}
+    <a class="prev" href="{{ content_url(pagination.root, 'page', pagination.prev_num) }}">«Prev</a>
+    {% else %}
+    
+    {% endif %}
+
+    <span class="current">
+        {{ pagination.page }} / {{ pagination.pages }}
+    </span>
+
+    {% if pagination.has_next %}
+    <a class="next" href="{{ content_url(pagination.root, 'page', pagination.next_num) }}">Next»</a>
+    {% else %}
+    
+    {% endif %}
+</nav>
+{% endif %}
+</div>
+<div class="grid grid-10 last">
+    <section class="about-author">
+        <img width="400px" height="200px" src="{{static_url('img/author.jpg')}}">
+        <p>Hi ! I am a geeker named <a href="https://twitter.com/yxiaoxie">@yangxiaoxie</a> . I am a programmer currently ，daily use of language is Java / JavaScript ，now working in <a href="http://ultrapower.com.cn">Ultrapower</a> . I like Open Source , interest on interaction design, attention to user experience .</p>
+        <p>You can reach me via one of the following channels:</p>
+        <ul>
+            <li class="twitter"><a href="https://twitter.com/yxiaoxie">@yxiaoxie</a></li>
+            <li class="weibo"><a href="http://weibo.com/u/1766082131">yangxiaoxiehaha</a></li>
+            <li class="email"><a href="mailto:yangxiaoxiehaha@gmail.com">yangxiaoxiehaha [at] gmail.com</a></li>
+        </ul>
+    </section>
+</div>
+{% endblock %}
