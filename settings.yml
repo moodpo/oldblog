@@ -50,8 +50,8 @@ writer:
         - liquidluck.writers.core.StaticWriter
         - liquidluck.writers.core.YearWriter
         - liquidluck.writers.core.CategoryWriter
-        - liquidluck.writers.core.CategoryFeedWriter
-        - liquidluck.writers.core.TagWriter
+        #- liquidluck.writers.core.CategoryFeedWriter
+        #- liquidluck.writers.core.TagWriter
         - liquidluck.writers.core.TagCloudWriter
     vars:
         # uncomment if you want to reset archive page
