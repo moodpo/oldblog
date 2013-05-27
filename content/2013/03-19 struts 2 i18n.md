@@ -2,7 +2,7 @@
 
 - date: 2013-03-19
 - category: Work
-- tags: struts2, 笔记
+- tags: struts2, note
 
 ----
 
