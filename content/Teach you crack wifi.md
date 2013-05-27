@@ -99,7 +99,7 @@ mon0 ：开启了监听模式的网卡名称
     xiaoxie@xiaoxie-laptop:~$ sudo airodump-ng mon0
     
 
-![airodump-ng][4]
+<p align="center"><img src="/media/2013/02/4236977490.png"></p>
 
 上图显示了周围可以搜索到的AP(上列表)和终端(下列表)及详细信息。下面是对列表的具体解释：
 
@@ -211,4 +211,3 @@ Probes：客户端连接的AP点名称
  [1]: http://www.aircrack-ng.org/doku.php?id=compatibility_drivers#which_is_the_best_card_to_buy
  [2]: https://help.ubuntu.com/community/WifiDocs/Driver
  [3]: http://linuxwireless.org/
- [4]: /media/2013/02/4236977490.png
