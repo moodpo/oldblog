@@ -1,6 +1,6 @@
 # 复习笔记——Struts 2 标签（一）
 
-- date: 213-03-13
+- date: 2013-03-13
 - category: Work
 - tags: struts2, tag
 

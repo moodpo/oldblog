@@ -1,6 +1,6 @@
 # 复习笔记——Struts 2 标签（三）
 
-- date: 213-03-14
+- date: 2013-03-14
 - category: Work
 - tags: struts2, tag, J2EE
 
