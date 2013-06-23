@@ -90,7 +90,7 @@ Eclipse 在 Win 下比较美观，然而在 Ubuntu 下可完全走了样，尤�
 
 之所以会有上述糟糕的表现，不是 Eclipse 的问题，是因为 GTK 2.0 中的控件间距太大原因导致的，而谷歌搜索的大部分解决方法也正是着力于修改 GTK 2.0 控件的表现形式，重新定义一些样式。大多数方法是在 `/home/username/` 下新建 `.gtkrc-2.0` 文件，并在其中添加CSS。然而这种方法会把系统全局的样式都改变，比如 Chrome 的，甚至系统的菜单。哪有没有一种方法只修改 Eclipse 的呢？答案是肯定的！我们可以专门在启动 Eclipse 时指定 GTK 2.0 使用的 gtkrc 文件，而别的应用直接启动就不会受影响了。
 
-自己定义实在是麻烦，好在已经有人为我们写好了，链接在这里，https://github.com/nailgun/eclipse-gtkrc，你可以把它 git clone 到一个目录，然后修改，eclicp 脚本，比如我把它放在了 Public 下，eclipse 脚本内容如下：
+自己定义实在是麻烦，好在已经有人为我们写好了，链接在[这里][4]。你可以把它 git clone 到一个目录，然后修改，eclicp 脚本，比如我把它放在了 Public 下，eclipse 脚本内容如下：
 
 	#!/bin/bash
 
@@ -131,3 +131,4 @@ JavaEE 的项目在 GitHub 上，这个插件就是必须的。可以直接在 E
 [1]: https://github.com/jeeeyul/eclipse-themes
 [2]: /media/2013/06/002.png "Eclipse 截屏"
 [3]: https://smarthosts.googlecode.com/svn/trunk/hosts
+[4]: https://github.com/nailgun/eclipse-gtkrc
